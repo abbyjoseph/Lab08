@@ -1,0 +1,2036 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 12028
+License: Customer
+
+Current time: 	Thu Oct 15 12:14:16 CDT 2020
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/XilinxVitis/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	C:/XilinxVitis/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	abby_joseph1
+User home directory: C:/Users/abby_joseph1
+User working directory: C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/XilinxVitis/Vivado
+HDI_APPROOT: C:/XilinxVitis/Vivado/2020.1
+RDI_DATADIR: C:/XilinxVitis/Vivado/2020.1/data
+RDI_BINDIR: C:/XilinxVitis/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/abby_joseph1/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/abby_joseph1/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/abby_joseph1/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	C:/XilinxVitis/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/vivado.log
+Vivado journal file location: 	C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/vivado.jou
+Engine tmp dir: 	C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/.Xil/Vivado-12028-ROG-305-01
+
+Xilinx Environment Variables
+----------------------------
+VSSDK140Install: C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\
+XILINX: C:/XilinxVitis/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: C:/XilinxVitis/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/XilinxVitis/Vivado/2020.1
+XILINX_SDK: C:/XilinxVitis/Vitis/2020.1
+XILINX_VITIS: C:/XilinxVitis/Vitis/2020.1
+XILINX_VIVADO: C:/XilinxVitis/Vivado/2020.1
+XILINX_VIVADO_HLS: C:/XilinxVitis/Vivado/2020.1
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,092 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 98 MB (+100140kb) [00:00:06]
+// [Engine Memory]: 1,092 MB (+993753kb) [00:00:06]
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\abby_joseph1\Documents\GitHub\Lab08\Lab08\Lab08.xpr. Version: Vivado v2020.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 113 MB (+11017kb) [00:00:10]
+// WARNING: HEventQueue.dispatchEvent() is taking  2624 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/XilinxVitis/Vivado/2020.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 59 MB. Current time: 10/15/20, 12:14:16 PM CDT
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 1111.457 ; gain = 0.000 
+// Project name: Lab08; location: C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bz (cs)
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 130 MB (+11068kb) [00:00:17]
+// Tcl Message: update_compile_order -fileset sources_1 
+// a (cs): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux4 (mux4.sv)]", 3, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux4 (mux4.sv)]", 3, false, false, false, false, false, true); // B (F, cs) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 6); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 7); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, mux4_test (mux4_test.sv)]", 10, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, mux4_test (mux4_test.sv)]", 10, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectCodeEditor("mux4_test.sv", 89, 447); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("mux4_test.sv", 598, 508); // bP (w, cs)
+typeControlKey((HResource) null, "mux4_test.sv", 'c'); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 623, 502); // bP (w, cs)
+typeControlKey((HResource) null, "mux4_test.sv", 'v'); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 57, 521); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 99, 522); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 613, 508); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 659, 604); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 26, 127); // bP (w, cs)
+// Elapsed time: 14 seconds
+selectCodeEditor("mux4_test.sv", 214, 154); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 72, 454); // bP (w, cs)
+// Elapsed time: 14 seconds
+selectCodeEditor("mux4_test.sv", 295, 611); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, mux4_test (mux4_test.sv)]", 10, true, false, false, false, true, false); // B (F, cs) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cs)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cs)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cs)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cs)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top mux4_test [get_filesets sim_1] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top_lib xil_defaultlib [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 138 MB (+2278kb) [00:02:01]
+// Tcl Message: update_compile_order -fileset sim_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (J, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cs):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'mux4_test' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj mux4_test_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/mux4_test.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module mux4_test 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '3' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 005fdccda0a04aab9fcad453350786b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mux4_test_behav xil_defaultlib.mux4_test xil_defaultlib.glbl -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1111.457 ; gain = 0.000 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 9 seconds
+selectButton("OptionPane.button", "OK"); // JButton (v, B)
+// a (cs): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cs)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL (aI, cs)
+selectCodeEditor("mux4_test.sv", 12, 303); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 12, 303, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("mux4_test.sv", 399, 352); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 285, 514); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (J, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cs):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'mux4_test' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj mux4_test_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/mux2.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module mux2 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/mux4_test.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module mux4_test 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 005fdccda0a04aab9fcad453350786b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mux4_test_behav xil_defaultlib.mux4_test xil_defaultlib.glbl -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 7 seconds
+selectButton("OptionPane.button", "OK"); // JButton (v, B)
+// a (cs): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cs)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux4.sv", 1); // m (l, cs)
+selectCodeEditor("mux4.sv", 113, 463); // bP (w, cs)
+selectCodeEditor("mux4.sv", 113, 482); // bP (w, cs)
+selectCodeEditor("mux4.sv", 114, 499); // bP (w, cs)
+selectCodeEditor("mux4.sv", 114, 518); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux4_test.sv", 2); // m (l, cs)
+selectCodeEditor("mux4_test.sv", 35, 319); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (J, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux4.sv", 1); // m (l, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux4_test.sv", 2); // m (l, cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (J, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cs):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'mux4_test' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj mux4_test_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/mux4.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module mux4 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/mux4_test.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module mux4_test 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '3' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 005fdccda0a04aab9fcad453350786b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mux4_test_behav xil_defaultlib.mux4_test xil_defaultlib.glbl -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1111.457 ; gain = 0.000 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 8 seconds
+selectButton("OptionPane.button", "OK"); // JButton (v, B)
+// a (cs): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cs)
+selectCodeEditor("mux4_test.sv", 4, 79); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 4, 79, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("mux4_test.sv", 320, 140); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (J, cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (J, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cs):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'mux4_test' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj mux4_test_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/mux4.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module mux4 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/mux4_test.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module mux4_test 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 005fdccda0a04aab9fcad453350786b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mux4_test_behav xil_defaultlib.mux4_test xil_defaultlib.glbl -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 8 seconds
+selectButton("OptionPane.button", "OK"); // JButton (v, B)
+// a (cs): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cs)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux4.sv", 1); // m (l, cs)
+selectCodeEditor("mux4.sv", 70, 384); // bP (w, cs)
+selectCodeEditor("mux4.sv", 320, 409); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux4_test.sv", 2); // m (l, cs)
+selectCodeEditor("mux4_test.sv", 11, 77); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 11, 77, false, false, false, false, true); // bP (w, cs) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (J, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cs):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'mux4_test' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj mux4_test_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/mux4.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module mux4 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/mux4_test.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module mux4_test 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 005fdccda0a04aab9fcad453350786b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mux4_test_behav xil_defaultlib.mux4_test xil_defaultlib.glbl -log elaborate.log" 
+// Tcl Message: Built simulation snapshot mux4_test_behav 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message:  ****** Webtalk v2020.1 (64-bit)   **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020   **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.  source C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim/xsim.dir/mux4_test_behav/webtalk/xsim_webtalk.tcl -notrace INFO: [Common 17-206] Exiting Webtalk at Thu Oct 15 12:19:17 2020... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1111.457 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "mux4_test_behav -key {Behavioral:sim_1:Functional:mux4_test} -tclbatch {mux4_test.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2020.1 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Elapsed time: 15 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source mux4_test.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 85 MB. Current time: 10/15/20, 12:19:20 PM CDT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: $finish called at time : 80 ns : File "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/mux4_test.sv" Line 61 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'mux4_test_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 1111.457 ; gain = 0.000 
+// 'd' command handler elapsed time: 16 seconds
+dismissDialog("Run Simulation"); // e (cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 2); // m (l, cs)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // E (g, cs)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 85 MB. Current time: 10/15/20, 12:19:31 PM CDT
+selectMenu("Waveform Style"); // af (ao, cs)
+selectMenu("Signal Color"); // af (ao, cs)
+selectMenu("Waveform Style"); // af (ao, cs)
+selectMenu("Waveform Style"); // af (ao, cs)
+selectMenu("Signal Color"); // af (ao, cs)
+selectMenu("Radix"); // af (ao, cs)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectMenu("Radix"); // af (ao, cs)
+selectMenuItem((HResource) null, "Unsigned Decimal"); // W (cs)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenu("Waveform Style"); // af (ao, cs)
+selectMenu("Signal Color"); // af (ao, cs)
+selectMenu("Waveform Style"); // af (ao, cs)
+selectMenu("Signal Color"); // af (ao, cs)
+selectMenu("Radix"); // af (ao, cs)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectMenu("Radix"); // af (ao, cs)
+selectMenuItem((HResource) null, "Unsigned Decimal"); // W (cs)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 84 MB. Current time: 10/15/20, 12:19:41 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenu("Waveform Style"); // af (ao, cs)
+selectMenu("Signal Color"); // af (ao, cs)
+selectMenu("Radix"); // af (ao, cs)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectMenu("Radix"); // af (ao, cs)
+selectMenu("Radix"); // af (ao, cs)
+selectMenuItem((HResource) null, "Unsigned Decimal"); // W (cs)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 84 MB. Current time: 10/15/20, 12:19:49 PM CDT
+selectMenu("Waveform Style"); // af (ao, cs)
+selectMenu("Signal Color"); // af (ao, cs)
+selectMenu("Waveform Style"); // af (ao, cs)
+selectMenu("Signal Color"); // af (ao, cs)
+selectMenu("Radix"); // af (ao, cs)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectMenu("Radix"); // af (ao, cs)
+selectMenuItem((HResource) null, "Unsigned Decimal"); // W (cs)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenu("Waveform Style"); // af (ao, cs)
+selectMenu("Signal Color"); // af (ao, cs)
+selectMenu("Radix"); // af (ao, cs)
+selectMenu("Radix"); // af (ao, cs)
+selectMenuItem((HResource) null, "Unsigned Decimal"); // W (cs)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 88 MB. Current time: 10/15/20, 12:19:58 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 40 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux4_test.sv", 1); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1*", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux4_test.sv", 1); // m (l, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("mux4_test.sv", 429, 539); // bP (w, cs)
+// Elapsed time: 12 seconds
+selectCodeEditor("mux4_test.sv", 428, 554); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 537, 540); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aB, cs)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aB, cs)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - mux4_test", "DesignTask.SIMULATION");
+// A (cs): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+dismissDialog("Confirm Close"); // A (cs)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// bz (cs):  Close : addNotify
+selectButton("OptionPane.button", "Discard"); // JButton (v, B)
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // bz (cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (J, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cs):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'mux4_test' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj mux4_test_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/mux4.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module mux4 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/mux4_test.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module mux4_test 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 005fdccda0a04aab9fcad453350786b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mux4_test_behav xil_defaultlib.mux4_test xil_defaultlib.glbl -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "mux4_test_behav -key {Behavioral:sim_1:Functional:mux4_test} -tclbatch {mux4_test.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2020.1 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 86 MB. Current time: 10/15/20, 12:21:43 PM CDT
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source mux4_test.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: $finish called at time : 80 ns : File "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/mux4_test.sv" Line 61 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'mux4_test_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1111.457 ; gain = 0.000 
+// 'd' command handler elapsed time: 7 seconds
+dismissDialog("Run Simulation"); // e (cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 2", 2); // m (l, cs)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // E (g, cs)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 146 MB (+551kb) [00:07:46]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 102 MB. Current time: 10/15/20, 12:21:49 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 86 MB. Current time: 10/15/20, 12:21:51 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 86 MB. Current time: 10/15/20, 12:21:53 PM CDT
+selectMenu("Waveform Style"); // af (ao, cs)
+selectMenu("Signal Color"); // af (ao, cs)
+selectMenu("Radix"); // af (ao, cs)
+selectMenuItem((HResource) null, "Unsigned Decimal"); // W (cs)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 105 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux4_test.sv", 1); // m (l, cs)
+selectCodeEditor("mux4_test.sv", 464, 487); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 534, 537); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 534, 537, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("mux4_test.sv", 524, 534); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 524, 534); // bP (w, cs)
+typeControlKey((HResource) null, "mux4_test.sv", 'c'); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 526, 482); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 521, 469); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 526, 468); // bP (w, cs)
+typeControlKey((HResource) null, "mux4_test.sv", 'v'); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 526, 484); // bP (w, cs)
+typeControlKey((HResource) null, "mux4_test.sv", 'v'); // bP (w, cs)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("mux4_test.sv", 551, 466); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 551, 466, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("mux4_test.sv", 539, 469); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 524, 470); // bP (w, cs)
+typeControlKey((HResource) null, "mux4_test.sv", 'v'); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 527, 482); // bP (w, cs)
+typeControlKey((HResource) null, "mux4_test.sv", 'v'); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 413, 541); // bP (w, cs)
+typeControlKey((HResource) null, "mux4_test.sv", 'c'); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 415, 463); // bP (w, cs)
+typeControlKey((HResource) null, "mux4_test.sv", 'v'); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 414, 482); // bP (w, cs)
+typeControlKey((HResource) null, "mux4_test.sv", 'v'); // bP (w, cs)
+selectCodeEditor("mux4_test.sv", 476, 660); // bP (w, cs)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aB, cs)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - mux4_test", "DesignTask.SIMULATION");
+// A (cs): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+dismissDialog("Confirm Close"); // A (cs)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// c (cs): Save Simulation Sources: addNotify
+selectButton("OptionPane.button", "Discard"); // JButton (v, B)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (c)
+// TclEventType: DG_GRAPH_STALE
+// bz (cs):  Close : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+dismissDialog("Save Simulation Sources"); // c (cs)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // bz (cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (J, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cs):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'mux4_test' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj mux4_test_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/mux4.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module mux4 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/mux4_test.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module mux4_test 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 005fdccda0a04aab9fcad453350786b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mux4_test_behav xil_defaultlib.mux4_test xil_defaultlib.glbl -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "mux4_test_behav -key {Behavioral:sim_1:Functional:mux4_test} -tclbatch {mux4_test.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2020.1 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 89 MB. Current time: 10/15/20, 12:24:54 PM CDT
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source mux4_test.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: $finish called at time : 80 ns : File "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/mux4_test.sv" Line 61 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'mux4_test_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1111.457 ; gain = 0.000 
+// 'd' command handler elapsed time: 7 seconds
+dismissDialog("Run Simulation"); // e (cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 3", 2); // m (l, cs)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // E (g, cs)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 89 MB. Current time: 10/15/20, 12:24:59 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 89 MB. Current time: 10/15/20, 12:25:01 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenu("Waveform Style"); // af (ao, cs)
+selectMenu("Signal Color"); // af (ao, cs)
+selectMenu("Radix"); // af (ao, cs)
+selectMenuItem((HResource) null, "Unsigned Decimal"); // W (cs)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 88 MB. Current time: 10/15/20, 12:25:07 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 88 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aB, cs)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - mux4_test", "DesignTask.SIMULATION");
+// A (cs): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+dismissDialog("Confirm Close"); // A (cs)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// bz (cs):  Close : addNotify
+selectButton("OptionPane.button", "Discard"); // JButton (v, B)
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // bz (cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux4.sv", 1); // m (l, cs)
+// Elapsed time: 65 seconds
+selectCodeEditor("mux4.sv", 221, 333); // bP (w, cs)
+selectCodeEditor("mux4.sv", 221, 333, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("mux4.sv", 231, 513); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 28 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // cm (Q, F)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "an_decoder"); // ac (Q, F)
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_LOCATION, "Choose Location...", 1); // e (Q, F)
+setFolderChooser("C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+// Elapsed time: 16 seconds
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 47 seconds
+dismissDialog("Add Sources"); // c (cs)
+// Tcl Message: close [ open C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/an_decoder.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/an_decoder.sv 
+// I (cs): Define Module: addNotify
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 0, (String) null, 0); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "in", 0, "Port Name", 0); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "in ; input ; false ; 0 ; 0", 0, "false", 2); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "in ; input ; true ; 0 ; 0", 0, "0", 3); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "1", 0, "MSB", 3); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "out", 1, "Port Name", 0); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "out ; input ; false ; 0 ; 0", 1, "input", 1); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output", 1, "Direction", 1); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "out ; output ; false ; 0 ; 0", 1, "false", 2); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "out ; output ; true ; 0 ; 0", 1, "0", 3); // ab (J, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "1", 1, "MSB", 3); // ab (J, I)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I (cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, an_decoder (an_decoder.sv)]", 2, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, an_decoder (an_decoder.sv)]", 2, false, false, false, false, false, true); // B (F, cs) - Double Click
+// [GUI Memory]: 155 MB (+2330kb) [00:15:33]
+selectCodeEditor("an_decoder.sv", 131, 383); // bP (w, cs)
+// Elapsed time: 19 seconds
+selectCodeEditor("an_decoder.sv", 83, 401); // bP (w, cs)
+selectCodeEditor("an_decoder.sv", 171, 447); // bP (w, cs)
+selectCodeEditor("an_decoder.sv", 142, 431); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux4.sv", 1); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "an_decoder.sv", 3); // m (l, cs)
+selectCodeEditor("an_decoder.sv", 61, 401); // bP (w, cs)
+selectCodeEditor("an_decoder.sv", 35, 452); // bP (w, cs)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux4.sv", 1); // m (l, cs)
+selectCodeEditor("mux4.sv", 24, 519); // bP (w, cs)
+typeControlKey((HResource) null, "mux4.sv", 'c'); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "an_decoder.sv", 3); // m (l, cs)
+typeControlKey((HResource) null, "an_decoder.sv", 'v'); // bP (w, cs)
+selectCodeEditor("an_decoder.sv", 34, 485); // bP (w, cs)
+selectCodeEditor("an_decoder.sv", 133, 481); // bP (w, cs)
+selectCodeEditor("an_decoder.sv", 133, 481, false, false, false, false, true); // bP (w, cs) - Double Click
+// Elapsed time: 15 seconds
+typeControlKey((HResource) null, "an_decoder.sv", 'c'); // bP (w, cs)
+selectCodeEditor("an_decoder.sv", 127, 504); // bP (w, cs)
+selectCodeEditor("an_decoder.sv", 127, 504, false, false, false, false, true); // bP (w, cs) - Double Click
+typeControlKey((HResource) null, "an_decoder.sv", 'v'); // bP (w, cs)
+selectCodeEditor("an_decoder.sv", 126, 522); // bP (w, cs)
+selectCodeEditor("an_decoder.sv", 126, 522, false, false, false, false, true); // bP (w, cs) - Double Click
+typeControlKey((HResource) null, "an_decoder.sv", 'v'); // bP (w, cs)
+selectCodeEditor("an_decoder.sv", 129, 533); // bP (w, cs)
+selectCodeEditor("an_decoder.sv", 129, 533, false, false, false, false, true); // bP (w, cs) - Double Click
+typeControlKey((HResource) null, "an_decoder.sv", 'v'); // bP (w, cs)
+// Elapsed time: 15 seconds
+selectCodeEditor("an_decoder.sv", 202, 544); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux4.sv", 1); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "an_decoder.sv", 3); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux4.sv", 1); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "an_decoder.sv", 3); // m (l, cs)
+selectCodeEditor("an_decoder.sv", 59, 451); // bP (w, cs)
+selectCodeEditor("an_decoder.sv", 204, 549); // bP (w, cs)
+selectCodeEditor("an_decoder.sv", 166, 518); // bP (w, cs)
+// Elapsed time: 19 seconds
+selectCodeEditor("an_decoder.sv", 201, 590); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 19 seconds
+selectCodeEditor("an_decoder.sv", 432, 410); // bP (w, cs)
+// Elapsed time: 46 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+dismissFileChooser();
+dismissFileChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 11 seconds
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // cm (Q, F)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "sseg4"); // ac (Q, F)
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_LOCATION, "Choose Location...", 1); // e (Q, F)
+setFolderChooser("C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 36 seconds
+dismissDialog("Add Sources"); // c (cs)
+// Tcl Message: close [ open C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/sseg4.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/sseg4.sv 
+// I (cs): Define Module: addNotify
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 0, (String) null, 0); // ab (J, I)
+applyEnter(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, (String) null); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "data", 0, "Port Name", 0); // ab (J, I)
+applyEnter(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, (String) null); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "hex_dec", 1, "Port Name", 0); // ab (J, I)
+applyEnter(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, (String) null); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "sign", 2, "Port Name", 0); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "digit", 3, "Port Name", 0); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "digit ; input ; false ; 0 ; 0", 3, "digit", 0); // ab (J, I)
+applyEnter(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, (String) null); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "digit_sel", 3, "Port Name", 0); // ab (J, I)
+applyEnter(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, (String) null); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "seg", 4, "Port Name", 0); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 5, (String) null, 0); // ab (J, I)
+applyEnter(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, (String) null); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "dp", 5, "Port Name", 0); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "an", 6, "Port Name", 0); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "seg ; input ; false ; 0 ; 0", 4, "input", 1); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "input", 4, "Direction", 1); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "input", 6, "Direction", 1); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output", 4, "Direction", 1); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "dp ; input ; false ; 0 ; 0", 5, "input", 1); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output", 5, "Direction", 1); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "an ; input ; false ; 0 ; 0", 6, "input", 1); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output", 6, "Direction", 1); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "data ; input ; false ; 0 ; 0", 0, "false", 2); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "hex_dec ; input ; false ; 0 ; 0", 1, "false", 2); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "digit_sel ; input ; false ; 0 ; 0", 3, "false", 2); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "digit_sel ; input ; true ; 0 ; 0", 3, "0", 3); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "1", 3, "MSB", 3); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "seg ; output ; false ; 0 ; 0", 4, "false", 2); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "seg ; output ; true ; 0 ; 0", 4, "0", 3); // ab (J, I)
+// [GUI Memory]: 173 MB (+10740kb) [00:21:05]
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "6", 4, "MSB", 3); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "an ; output ; false ; 0 ; 0", 6, "false", 2); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "an ; output ; true ; 0 ; 0", 6, "0", 3); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "3", 6, "MSB", 3); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "data ; input ; true ; 0 ; 0", 0, "0", 3); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "15", 0, "MSB", 3); // ab (J, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I (cs)
+// [GUI Memory]: 228 MB (+48322kb) [00:21:24]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, an_decoder (an_decoder.sv)]", 2, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, an_decoder (an_decoder.sv)]", 2, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4 (sseg4.sv)]", 5, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4 (sseg4.sv)]", 5, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("sseg4.sv", 86, 520); // bP (w, cs)
+// Elapsed time: 40 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+// Elapsed time: 13 seconds
+setFileChooser("C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/BCD11b.sv");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 22 seconds
+dismissDialog("Add Sources"); // c (cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/BCD11b.sv 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BCD11b (BCD11b.sv)]", 1, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BCD11b (BCD11b.sv)]", 1, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 4); // m (l, cs)
+// Elapsed time: 39 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux4_test.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 4); // m (l, cs)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux4_test.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "an_decoder.sv", 3); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 4); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCD11b.sv", 5); // m (l, cs)
+// Elapsed time: 10 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BCD11b (BCD11b.sv)]", 1, true, false, false, false, true, false); // B (F, cs) - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cs)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cs): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cs)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/BCD11b.sv] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/BCD11b.sv 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 35 seconds
+selectCodeEditor("sseg4.sv", 600, 61); // bP (w, cs)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+setFileChooser("C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/BCD11b.sv");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 16 seconds
+dismissDialog("Add Sources"); // c (cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/BCD11b.sv 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BCD11b (BCD11b.sv)]", 1, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BCD11b (BCD11b.sv)]", 1, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,113 MB. GUI used memory: 152 MB. Current time: 10/15/20, 12:39:29 PM CDT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("BCD11b.sv", 806, 211); // bP (w, cs)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 13 seconds
+selectCodeEditor("BCD11b.sv", 148, 162); // bP (w, cs)
+selectCodeEditor("BCD11b.sv", 147, 115); // bP (w, cs)
+selectCodeEditor("BCD11b.sv", 147, 115, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("BCD11b.sv", 93, 110); // bP (w, cs)
+selectCodeEditor("BCD11b.sv", 191, 570); // bP (w, cs)
+// Elapsed time: 26 seconds
+selectCodeEditor("BCD11b.sv", 119, 591); // bP (w, cs)
+selectCodeEditor("BCD11b.sv", 224, 559); // bP (w, cs)
+selectCodeEditor("BCD11b.sv", 126, 590); // bP (w, cs)
+selectCodeEditor("BCD11b.sv", 376, 590); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 120 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 4); // m (l, cs)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("sseg4.sv", 196, 550); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCD11b.sv", 5); // m (l, cs)
+selectCodeEditor("BCD11b.sv", 182, 407); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("BCD11b.sv", 198, 407); // bP (w, cs)
+selectCodeEditor("BCD11b.sv", 29, 402); // bP (w, cs)
+selectCodeEditor("BCD11b.sv", 41, 416); // bP (w, cs)
+typeControlKey((HResource) null, "BCD11b.sv", 'c'); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 4); // m (l, cs)
+selectCodeEditor("sseg4.sv", 74, 576); // bP (w, cs)
+typeControlKey((HResource) null, "sseg4.sv", 'v'); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 61, 574); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 26, 570); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 29, 590); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 125, 590); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 125, 590, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("sseg4.sv", 22, 589); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 29, 590); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 100, 586); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 42, 530); // bP (w, cs)
+// Elapsed time: 21 seconds
+selectCodeEditor("sseg4.sv", 42, 518); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 76, 517); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 147, 533); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 133, 545); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 131, 536); // bP (w, cs)
+// Elapsed time: 12 seconds
+selectCodeEditor("sseg4.sv", 135, 521); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 172, 573); // bP (w, cs)
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux2 (mux2.sv)]", 5, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux2 (mux2.sv)]", 5, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("mux2.sv", 59, 503); // bP (w, cs)
+// Elapsed time: 22 seconds
+typeControlKey((HResource) null, "mux2.sv", 'c'); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCD11b.sv", 5); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 4); // m (l, cs)
+selectCodeEditor("sseg4.sv", 50, 567); // bP (w, cs)
+typeControlKey((HResource) null, "sseg4.sv", 'v'); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 28, 465); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 193, 454); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux4_test.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 4); // m (l, cs)
+selectCodeEditor("sseg4.sv", 107, 140); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 100, 166); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux4_test.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 4); // m (l, cs)
+selectCodeEditor("sseg4.sv", 85, 302); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 52, 324); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 45, 311); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("sseg4.sv", 219, 467); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 78, 452); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux4_test.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 4); // m (l, cs)
+selectCodeEditor("sseg4.sv", 211, 502); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 26, 470); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 24, 483); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 24, 485); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 27, 485); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 26, 502); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 29, 516); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 55, 471); // bP (w, cs)
+// Elapsed time: 18 seconds
+selectCodeEditor("sseg4.sv", 55, 469); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCD11b.sv", 5); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 4); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCD11b.sv", 5); // m (l, cs)
+selectCodeEditor("BCD11b.sv", 301, 449); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 4); // m (l, cs)
+selectCodeEditor("sseg4.sv", 54, 501); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 94, 525); // bP (w, cs)
+// Elapsed time: 12 seconds
+selectCodeEditor("sseg4.sv", 173, 330); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 165, 332); // bP (w, cs)
+// Elapsed time: 13 seconds
+selectCodeEditor("sseg4.sv", 106, 358); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 47, 346); // bP (w, cs)
+// Elapsed time: 28 seconds
+selectCodeEditor("sseg4.sv", 77, 368); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 181, 368); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 144, 389); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("sseg4.sv", 97, 573); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("sseg4.sv", 182, 256); // bP (w, cs)
+// Elapsed time: 26 seconds
+selectCodeEditor("sseg4.sv", 183, 515); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 85, 582); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux4.sv", 1); // m (l, cs)
+selectCodeEditor("mux4.sv", 112, 515); // bP (w, cs)
+selectCodeEditor("mux4.sv", 81, 328); // bP (w, cs)
+typeControlKey((HResource) null, "mux4.sv", 'c'); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 4); // m (l, cs)
+selectCodeEditor("sseg4.sv", 68, 585); // bP (w, cs)
+typeControlKey((HResource) null, "sseg4.sv", 'v'); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 78, 454); // bP (w, cs)
+// Elapsed time: 23 seconds
+selectCodeEditor("sseg4.sv", 138, 448); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 163, 561); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 102, 450); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("sseg4.sv", 62, 326); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux4_test.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 4); // m (l, cs)
+selectCodeEditor("sseg4.sv", 159, 338); // bP (w, cs)
+// Elapsed time: 13 seconds
+selectCodeEditor("sseg4.sv", 164, 450); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 79, 453); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 169, 451); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 241, 470); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 29, 467); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 27, 484); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 26, 503); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 28, 519); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 26, 539); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 26, 556); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 55, 469); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 59, 513); // bP (w, cs)
+// Elapsed time: 22 seconds
+typeControlKey((HResource) null, "sseg4.sv", 'c'); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 56, 500); // bP (w, cs)
+typeControlKey((HResource) null, "sseg4.sv", 'v'); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 56, 488); // bP (w, cs)
+typeControlKey((HResource) null, "sseg4.sv", 'v'); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 60, 468); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 54, 469); // bP (w, cs)
+typeControlKey((HResource) null, "sseg4.sv", 'v'); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 126, 469); // bP (w, cs)
+// Elapsed time: 43 seconds
+selectCodeEditor("sseg4.sv", 246, 541); // bP (w, cs)
+// Elapsed time: 18 seconds
+selectCodeEditor("sseg4.sv", 99, 567); // bP (w, cs)
+// Elapsed time: 281 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true); // B (F, cs) - Node
+selectButton(PAResourceEtoH.FileSetPanel_MESSAGES, "2"); // h (g, cs)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCD11b.sv", 5); // m (l, cs)
+selectCodeEditor("BCD11b.sv", 128, 572); // bP (w, cs)
+selectCodeEditor("BCD11b.sv", 385, 562); // bP (w, cs)
+// Elapsed time: 12 seconds
+selectButton(PAResourceEtoH.FileSetPanel_MESSAGES, "2"); // h (g, cs)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near [. [C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/BCD11b.sv:114]. ]", 5, false); // ah (J, cs)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\abby_joseph1\Documents\GitHub\Lab08\systemverilogcode\BCD11b.sv;-;;-;16;-;line;-;114;-;;-;16;-;"); // ah (J, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 4); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCD11b.sv", 5); // m (l, cs)
+selectCodeEditor("BCD11b.sv", 420, 108); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 4); // m (l, cs)
+selectCodeEditor("sseg4.sv", 307, 136); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 11 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4 (sseg4.sv), my_BCD11b : BCD11b (BCD11b.sv)]", 2); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, basys3 (basys3.sv)]", 13, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, basys3 (basys3.sv)]", 13, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, basys3 (basys3.sv), sseg4_manual_inst : xil_defaultlib.sseg4_manual]", 14, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, basys3 (basys3.sv), sseg4_manual_inst : xil_defaultlib.sseg4_manual]", 14, false, false, false, false, true, false); // B (F, cs) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, basys3 (basys3.sv), sseg4_manual_inst : xil_defaultlib.sseg4_manual]", 14, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, basys3 (basys3.sv), disp_inst : disp (disp.sv)]", 15, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, basys3 (basys3.sv), disp_inst : disp (disp.sv)]", 15, false, false, false, false, false, true); // B (F, cs) - Double Click
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "basys3.sv", 7); // m (l, cs)
+selectCodeEditor("basys3.sv", 117, 44); // bP (w, cs)
+selectCodeEditor("basys3.sv", 555, 114); // bP (w, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, basys3 (basys3.sv), sseg4_manual_inst : xil_defaultlib.sseg4_manual]", 14, false); // B (F, cs)
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 9458 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 9206 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 8157 ms. Increasing delay to 24471 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 8765 ms to process. Increasing delay to 2000 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 7991ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8009 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 17 ms. Decreasing delay to 2017 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,126 MB. GUI used memory: 145 MB. Current time: 10/15/20, 1:09:30 PM CDT
+// Elapsed time: 653 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 4); // m (l, cs)
+// Elapsed time: 16 seconds
+selectCodeEditor("sseg4.sv", 78, 543); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 72, 559); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 82, 582); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 88, 574); // bP (w, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg_decoder (sseg_decoder.sv)]", 6, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg_decoder (sseg_decoder.sv)]", 6, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("sseg_decoder.sv", 58, 214); // bP (w, cs)
+typeControlKey((HResource) null, "sseg_decoder.sv", 'c'); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 4); // m (l, cs)
+selectCodeEditor("sseg4.sv", 50, 605); // bP (w, cs)
+typeControlKey((HResource) null, "sseg4.sv", 'v'); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 28, 572); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 111, 569); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 110, 586); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 57, 592); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 146, 603); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 67, 603); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("sseg4.sv", 116, 574); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 56, 332); // bP (w, cs)
+typeControlKey((HResource) null, "sseg4.sv", 'c'); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 34, 601); // bP (w, cs)
+typeControlKey((HResource) null, "sseg4.sv", 'v'); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 223, 192); // bP (w, cs)
+typeControlKey((HResource) null, "sseg4.sv", 'c'); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 209, 202); // bP (w, cs)
+typeControlKey((HResource) null, "sseg4.sv", 'v'); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 138, 213); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 168, 214); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 144, 483); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 224, 488); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 266, 508); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 63, 499); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 76, 520); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 76, 520, false, false, false, false, true); // bP (w, cs) - Double Click
+// Elapsed time: 25 seconds
+selectCodeEditor("sseg4.sv", 91, 552); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 91, 552, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("sseg4.sv", 79, 535); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 79, 535, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("sseg4.sv", 112, 539); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 93, 550); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 93, 550, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("sseg4.sv", 341, 611); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 183, 536); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 140, 586); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 148, 463); // bP (w, cs)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "basys3.sv", 7); // m (l, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectCodeEditor("mux2.sv", 680, 281); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCD11b.sv", 5); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 4); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "an_decoder.sv", 3); // m (l, cs)
+selectCodeEditor("an_decoder.sv", 53, 437); // bP (w, cs)
+typeControlKey((HResource) null, "an_decoder.sv", 'c'); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 4); // m (l, cs)
+selectCodeEditor("sseg4.sv", 32, 485); // bP (w, cs)
+typeControlKey((HResource) null, "sseg4.sv", 'v'); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 99, 485); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 128, 398); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 128, 398, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("sseg4.sv", 100, 484); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 28, 506); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 28, 519); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 46, 502); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 71, 521); // bP (w, cs)
+// Elapsed time: 13 seconds
+selectCodeEditor("sseg4.sv", 209, 541); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 150, 551); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 224, 354); // bP (w, cs)
+// Elapsed time: 13 seconds
+selectCodeEditor("sseg4.sv", 41, 456); // bP (w, cs)
+// Elapsed time: 17 seconds
+selectCodeEditor("sseg4.sv", 175, 604); // bP (w, cs)
+// Elapsed time: 30 seconds
+selectCodeEditor("sseg4.sv", 296, 456); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 293, 480); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 83, 540); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 83, 540, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("sseg4.sv", 135, 537); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 177, 568); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 140, 591); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 56, 468); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, basys3 (basys3.sv)]", 14, true, false, false, false, true, false); // B (F, cs) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cs)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cs)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cs)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top basys3 [get_filesets sim_1] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top_lib xil_defaultlib [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, null, -1, false, false, false, true, false); // B (F, cs) - Popup Trigger
+// Tcl Message: update_compile_order -fileset sim_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (J, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cs):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'basys3' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj basys3_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/disp.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module disp INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/basys3.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module basys3 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 005fdccda0a04aab9fcad453350786b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot basys3_behav xil_defaultlib.basys3 xil_defaultlib.glbl -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 6 seconds
+selectButton("OptionPane.button", "OK"); // JButton (v, B)
+// a (cs): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cs)
+// Elapsed time: 14 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim/elaborate.log' file for more information.. ]", 3); // ah (J, cs)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim/elaborate.log' file for more information.. ]", 3); // ah (J, cs)
+// Elapsed time: 19 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // cm (Q, F)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "sseg4_manual"); // ac (Q, F)
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_LOCATION, "Choose Location...", 1); // e (Q, F)
+setFolderChooser("C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 23 seconds
+dismissDialog("Add Sources"); // c (cs)
+// Tcl Message: close [ open C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/sseg4_manual.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/sseg4_manual.sv 
+// I (cs): Define Module: addNotify
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 0, (String) null, 0); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "sw", 0, "Port Name", 0); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 1, (String) null, 0); // ab (J, I)
+applyEnter(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, (String) null); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "seg", 1, "Port Name", 0); // ab (J, I)
+applyEnter(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, (String) null); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "dp", 2, "Port Name", 0); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "an", 3, "Port Name", 0); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "sw ; input ; false ; 0 ; 0", 0, "input", 1); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "input", 0, "Direction", 1); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "input", 3, "Direction", 1); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "input", 0, "Direction", 1); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "sw ; input ; false ; 0 ; 0", 0, "false", 2); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "sw ; input ; true ; 0 ; 0", 0, "0", 3); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "15", 0, "MSB", 3); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "seg ; input ; false ; 0 ; 0", 1, "false", 2); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "seg ; input ; true ; 0 ; 0", 1, "0", 3); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "7", 1, "MSB", 3); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "seg ; input ; true ; 7 ; 0", 1, "input", 1); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output", 1, "Direction", 1); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "dp ; input ; false ; 0 ; 0", 2, "input", 1); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output", 2, "Direction", 1); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "input", 3, "Direction", 1); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "an ; input ; false ; 0 ; 0", 3, "input", 1); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "an ; input ; false ; 0 ; 0", 3, "input", 1); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output", 3, "Direction", 1); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "an ; output ; false ; 0 ; 0", 3, "false", 2); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "an ; output ; true ; 0 ; 0", 3, "0", 3); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "3", 3, "MSB", 3); // ab (J, I)
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I (cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_manual (sseg4_manual.sv)]", 8, false); // B (F, cs)
+// [GUI Memory]: 241 MB (+1732kb) [01:04:58]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_manual (sseg4_manual.sv)]", 8, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 4); // m (l, cs)
+selectCodeEditor("sseg4.sv", 48, 397); // bP (w, cs)
+typeControlKey((HResource) null, "sseg4.sv", 'c'); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_manual.sv", 7); // m (l, cs)
+selectCodeEditor("sseg4_manual.sv", 94, 473); // bP (w, cs)
+typeControlKey((HResource) null, "sseg4_manual.sv", 'v'); // bP (w, cs)
+selectCodeEditor("sseg4_manual.sv", 64, 439); // bP (w, cs)
+selectCodeEditor("sseg4_manual.sv", 26, 453); // bP (w, cs)
+selectCodeEditor("sseg4_manual.sv", 26, 475); // bP (w, cs)
+selectCodeEditor("sseg4_manual.sv", 28, 486); // bP (w, cs)
+selectCodeEditor("sseg4_manual.sv", 28, 502); // bP (w, cs)
+selectCodeEditor("sseg4_manual.sv", 26, 520); // bP (w, cs)
+selectCodeEditor("sseg4_manual.sv", 26, 537); // bP (w, cs)
+selectCodeEditor("sseg4_manual.sv", 24, 558); // bP (w, cs)
+selectCodeEditor("sseg4_manual.sv", 63, 452); // bP (w, cs)
+// Elapsed time: 36 seconds
+selectCodeEditor("sseg4_manual.sv", 135, 486); // bP (w, cs)
+selectCodeEditor("sseg4_manual.sv", 92, 463); // bP (w, cs)
+selectCodeEditor("sseg4_manual.sv", 82, 469); // bP (w, cs)
+selectCodeEditor("sseg4_manual.sv", 188, 451); // bP (w, cs)
+selectCodeEditor("sseg4_manual.sv", 181, 497); // bP (w, cs)
+selectCodeEditor("sseg4_manual.sv", 105, 483); // bP (w, cs)
+selectCodeEditor("sseg4_manual.sv", 87, 464); // bP (w, cs)
+selectCodeEditor("sseg4_manual.sv", 61, 483); // bP (w, cs)
+selectCodeEditor("sseg4_manual.sv", 62, 506); // bP (w, cs)
+selectCodeEditor("sseg4_manual.sv", 99, 507); // bP (w, cs)
+selectCodeEditor("sseg4_manual.sv", 54, 519); // bP (w, cs)
+// Elapsed time: 15 seconds
+selectCodeEditor("sseg4_manual.sv", 48, 538); // bP (w, cs)
+selectCodeEditor("sseg4_manual.sv", 73, 554); // bP (w, cs)
+selectCodeEditor("sseg4_manual.sv", 321, 553); // bP (w, cs)
+selectCodeEditor("sseg4_manual.sv", 182, 584); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux4_test.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_manual.sv", 7); // m (l, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (J, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cs):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'basys3' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj basys3_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 005fdccda0a04aab9fcad453350786b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot basys3_behav xil_defaultlib.basys3 xil_defaultlib.glbl -log elaborate.log" 
+// Tcl Message: Built simulation snapshot basys3_behav 
+// TclEventType: LAUNCH_SIM
+// Tcl Message:  ****** Webtalk v2020.1 (64-bit)   **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020   **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.  source C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim/xsim.dir/basys3_behav/webtalk/xsim_webtalk.tcl -notrace INFO: [Common 17-206] Exiting Webtalk at Thu Oct 15 13:21:46 2020... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1129.918 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "basys3_behav -key {Behavioral:sim_1:Functional:basys3} -tclbatch {basys3.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2020.1 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Elapsed time: 10 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,127 MB. GUI used memory: 129 MB. Current time: 10/15/20, 1:21:48 PM CDT
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source basys3.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message:     +--------- Digit 3 (? = incorrect segment values)     |+-------- Decimal point     ||+------- Digit 2 (? = incorrect segment values)     |||+------ Decimal point     ||||+----- Digit 1 (? = incorrect segment values)     |||||+---- Decimal point     ||||||+--- Digit 0 (? = incorrect segment values)     |||||||+-- Decimal point     |||||||| -->       F  -->       F  -->       F  -->     F    -->   F      -->   F      -->     F    -->       F  --> ?        --> ?        --> ?        --> ?        -->   F      -->     F    -->       F  $finish called at time : 150 ns : File "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/basys3.sv" Line 98 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'basys3_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1138.668 ; gain = 8.750 
+// 'd' command handler elapsed time: 11 seconds
+dismissDialog("Run Simulation"); // e (cs)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 4", 7); // m (l, cs)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // E (g, cs)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 448, 68); // n (o, cs)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,127 MB. GUI used memory: 128 MB. Current time: 10/15/20, 1:22:00 PM CDT
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, sw[15:0]]", 0, true, false, true, false, false, false); // a (r, cs) - Control Key - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, sw[15:0]]", 0, true, false, true, false, false, false); // a (r, cs) - Control Key - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,127 MB. GUI used memory: 128 MB. Current time: 10/15/20, 1:22:05 PM CDT
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, seg[6:0]]", 1, true, false, true, false, false, false); // a (r, cs) - Control Key - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, dp]", 2, false, false, true, false, false, false); // a (r, cs) - Control Key
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, an[3:0]]", 3, true, false, true, false, false, false); // a (r, cs) - Control Key - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,127 MB. GUI used memory: 150 MB. Current time: 10/15/20, 1:22:08 PM CDT
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, digit[0:3][15:0]]", 4, true, false, true, false, false, false); // a (r, cs) - Control Key - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, digit[0:3][15:0]]", 4, true, false, false, false, true, false); // a (r, cs) - Popup Trigger - Node
+selectMenu("Name"); // af (ao, cs)
+selectMenu("Waveform Style"); // af (ao, cs)
+selectMenu("Signal Color"); // af (ao, cs)
+selectMenu("Waveform Style"); // af (ao, cs)
+selectMenu("Name"); // af (ao, cs)
+selectMenu("Waveform Style"); // af (ao, cs)
+selectMenu("Signal Color"); // af (ao, cs)
+selectMenu("Radix"); // af (ao, cs)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectMenu("Radix"); // af (ao, cs)
+selectMenuItem((HResource) null, "Unsigned Decimal"); // W (cs)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 190, 97); // n (o, cs)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,127 MB. GUI used memory: 123 MB. Current time: 10/15/20, 1:22:22 PM CDT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 661, 111); // n (o, cs)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 688, 98); // n (o, cs)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,129 MB. GUI used memory: 123 MB. Current time: 10/15/20, 1:22:24 PM CDT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 680, 116); // n (o, cs)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 425, 42); // n (o, cs)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 449, 50); // n (o, cs)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,129 MB. GUI used memory: 123 MB. Current time: 10/15/20, 1:22:27 PM CDT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 499, 39); // n (o, cs)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 595, 38); // n (o, cs)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 515, 54); // n (o, cs)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,129 MB. GUI used memory: 123 MB. Current time: 10/15/20, 1:22:30 PM CDT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 445, 52); // n (o, cs)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_manual.sv", 6); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux2.sv", 5); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCD11b.sv", 4); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 4*", 7); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "an_decoder.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 3); // m (l, cs)
+selectCodeEditor("sseg4.sv", 543, 301); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 364, 460); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 121, 93); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 121, 93, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("sseg4.sv", 130, 96); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 130, 96, false, false, false, false, true); // bP (w, cs) - Double Click
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 73 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 4*", 7); // m (l, cs)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 190, 61); // n (o, cs)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,130 MB. GUI used memory: 123 MB. Current time: 10/15/20, 1:24:34 PM CDT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 423, 59); // n (o, cs)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 312, 69); // n (o, cs)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 663, 293); // n (o, cs)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 32 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_manual.sv", 6); // m (l, cs)
+// Elapsed time: 158 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 4*", 7); // m (l, cs)
+// Elapsed time: 42 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_manual.sv", 6); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 3); // m (l, cs)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_manual.sv", 6); // m (l, cs)
+// Elapsed time: 15 seconds
+selectCodeEditor("sseg4_manual.sv", 82, 381); // bP (w, cs)
+selectCodeEditor("sseg4_manual.sv", 244, 383); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 3); // m (l, cs)
+// Elapsed time: 36 seconds
+selectCodeEditor("sseg4.sv", 113, 384); // bP (w, cs)
+// Elapsed time: 64 seconds
+selectCodeEditor("sseg4.sv", 103, 227); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 392, 257); // bP (w, cs)
+// Elapsed time: 82 seconds
+selectCodeEditor("sseg4.sv", 138, 379); // bP (w, cs)
+// Elapsed time: 18 seconds
+selectCodeEditor("sseg4.sv", 74, 283); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 223, 335); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 159, 360); // bP (w, cs)
+// Elapsed time: 17 seconds
+selectCodeEditor("sseg4.sv", 61, 383); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 237, 383); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 199, 353); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("sseg4.sv", 419, 503); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aB, cs)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aB, cs)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - basys3", "DesignTask.SIMULATION");
+// A (cs): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+dismissDialog("Confirm Close"); // A (cs)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// bz (cs):  Close : addNotify
+selectButton("OptionPane.button", "Discard"); // JButton (v, B)
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// WARNING: HEventQueue.dispatchEvent() is taking  1801 ms.
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1142.625 ; gain = 0.000 
+dismissDialog("Close"); // bz (cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (J, cs)
+// [Engine Memory]: 1,188 MB (+43412kb) [01:19:44]
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cs):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'basys3' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj basys3_vlog.prj" 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,188 MB. GUI used memory: 122 MB. Current time: 10/15/20, 1:33:50 PM CDT
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/sseg4.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module sseg4 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/sseg4_manual.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module sseg4_manual INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab06/sseg_decoder.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module sseg_decoder 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 005fdccda0a04aab9fcad453350786b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot basys3_behav xil_defaultlib.basys3 xil_defaultlib.glbl -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot basys3_behav 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "basys3_behav -key {Behavioral:sim_1:Functional:basys3} -tclbatch {basys3.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2020.1 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,189 MB. GUI used memory: 128 MB. Current time: 10/15/20, 1:33:56 PM CDT
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: source basys3.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message:     +--------- Digit 3 (? = incorrect segment values)     |+-------- Decimal point     ||+------- Digit 2 (? = incorrect segment values)     |||+------ Decimal point     ||||+----- Digit 1 (? = incorrect segment values)     |||||+---- Decimal point     ||||||+--- Digit 0 (? = incorrect segment values)     |||||||+-- Decimal point     |||||||| -->       0  -->       ?  -->       2  -->     1    -->   0      -->   1      -->     4    -->       0  --> 0        --> 1        --> 0        --> ?        -->   4      -->     8    -->       ?  $finish called at time : 150 ns : File "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/basys3.sv" Line 98 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'basys3_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1200.977 ; gain = 8.445 
+// 'd' command handler elapsed time: 8 seconds
+dismissDialog("Run Simulation"); // e (cs)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 5", 8); // m (l, cs)
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,189 MB. GUI used memory: 128 MB. Current time: 10/15/20, 1:34:03 PM CDT
+// Elapsed time: 22 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 67, 48); // dT (ae, cs)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 84, 47); // dT (ae, cs)
+// Elapsed time: 18 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 73, 209); // dT (ae, cs)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 80, 209); // dT (ae, cs)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // E (g, cs)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 10 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aB, cs)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - basys3", "DesignTask.SIMULATION");
+// A (cs): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bz (cs):  Close : addNotify
+// TclEventType: WAVEFORM_CLOSE_WCFG
+dismissDialog("Confirm Close"); // A (cs)
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// WARNING: HEventQueue.dispatchEvent() is taking  1444 ms.
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // bz (cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_manual (sseg4_manual.sv), my_sseg4 : sseg4 (sseg4.sv)]", 2); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_manual (sseg4_manual.sv), my_sseg4 : sseg4 (sseg4.sv), my_sseg_decoder : sseg_decoder (sseg_decoder.sv)]", 6, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_manual (sseg4_manual.sv), my_sseg4 : sseg4 (sseg4.sv), my_sseg_decoder : sseg_decoder (sseg_decoder.sv)]", 6, false, false, false, false, false, true); // B (F, cs) - Double Click
+// Elapsed time: 87 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 4); // m (l, cs)
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_manual.sv", 7); // m (l, cs)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 4); // m (l, cs)
+// Elapsed time: 31 seconds
+selectCodeEditor("sseg4.sv", 137, 569); // bP (w, cs)
+selectCodeEditor("sseg4.sv", 260, 544); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (J, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cs):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'basys3' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj basys3_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 005fdccda0a04aab9fcad453350786b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot basys3_behav xil_defaultlib.basys3 xil_defaultlib.glbl -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "basys3_behav -key {Behavioral:sim_1:Functional:basys3} -tclbatch {basys3.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2020.1 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,193 MB. GUI used memory: 134 MB. Current time: 10/15/20, 1:38:11 PM CDT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source basys3.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message:     +--------- Digit 3 (? = incorrect segment values)     |+-------- Decimal point     ||+------- Digit 2 (? = incorrect segment values)     |||+------ Decimal point     ||||+----- Digit 1 (? = incorrect segment values)     |||||+---- Decimal point     ||||||+--- Digit 0 (? = incorrect segment values)     |||||||+-- Decimal point     |||||||| -->       0  -->       ?  -->       2  -->     1    -->   0      -->   1      -->     4    -->       0  --> 0        --> 1        --> 0        --> -        -->   4      -->     8    -->       ?  $finish called at time : 150 ns : File "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/basys3.sv" Line 98 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'basys3_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1204.688 ; gain = 1.336 
+// 'd' command handler elapsed time: 8 seconds
+dismissDialog("Run Simulation"); // e (cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 6", 9); // m (l, cs)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,193 MB. GUI used memory: 134 MB. Current time: 10/15/20, 1:38:19 PM CDT
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 3); // m (l, cs)
+selectTab((HResource) null, (HResource) null, "Sources", 1); // aL (aI, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, basys3 (basys3.sv), disp_inst : disp (disp.sv)]", 14, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, basys3 (basys3.sv), disp_inst : disp (disp.sv)]", 14, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("disp.sv", 189, 346); // bP (w, cs)
+selectCodeEditor("disp.sv", 189, 346, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("disp.sv", 175, 348); // bP (w, cs)
+selectCodeEditor("disp.sv", 160, 349); // bP (w, cs)
+typeControlKey((HResource) null, "disp.sv", 'c'); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg_decoder.sv", 8); // m (l, cs)
+selectCodeEditor("sseg_decoder.sv", 141, 436); // bP (w, cs)
+typeControlKey((HResource) null, "sseg_decoder.sv", 'v'); // bP (w, cs)
+selectCodeEditor("sseg_decoder.sv", 224, 428); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 6", 9); // m (l, cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (J, cs)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 1); // u (J, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// bz (cs):  Close : addNotify
+selectButton("OptionPane.button", "Yes"); // JButton (v, B)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// e (cs):  Run Simulation : addNotify
+dismissDialog("Close"); // bz (cs)
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'basys3' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj basys3_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 005fdccda0a04aab9fcad453350786b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot basys3_behav xil_defaultlib.basys3 xil_defaultlib.glbl -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "basys3_behav -key {Behavioral:sim_1:Functional:basys3} -tclbatch {basys3.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2020.1 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Tcl Message: Time resolution is 1 ps 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,193 MB. GUI used memory: 140 MB. Current time: 10/15/20, 1:39:21 PM CDT
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source basys3.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message:     +--------- Digit 3 (? = incorrect segment values)     |+-------- Decimal point     ||+------- Digit 2 (? = incorrect segment values)     |||+------ Decimal point     ||||+----- Digit 1 (? = incorrect segment values)     |||||+---- Decimal point     ||||||+--- Digit 0 (? = incorrect segment values)     |||||||+-- Decimal point     |||||||| -->       0  -->       C  -->       2  -->     1    -->   0      -->   1      -->     4    -->       0  --> 0        --> 1        --> 0        --> -        -->   4      -->     8    -->       C  $finish called at time : 150 ns : File "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/basys3.sv" Line 98 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'basys3_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1204.688 ; gain = 0.000 
+// 'd' command handler elapsed time: 11 seconds
+dismissDialog("Run Simulation"); // e (cs)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM

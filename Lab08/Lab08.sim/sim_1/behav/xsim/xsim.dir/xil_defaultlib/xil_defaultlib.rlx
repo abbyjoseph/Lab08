@@ -1,0 +1,17 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/abby_joseph1/Documents/GitHub/Lab06/sseg_decoder.sv,1602787144,systemVerilog,,C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/basys3.sv,,sseg_decoder,,,,,,,,
+C:/Users/abby_joseph1/Documents/GitHub/Lab07/add3.sv,1602777510,systemVerilog,,C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/an_decoder.sv,,add3,,,,,,,,
+C:/Users/abby_joseph1/Documents/GitHub/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/BCD11b.sv,1602784698,systemVerilog,,C:/Users/abby_joseph1/Documents/GitHub/Lab07/add3.sv,,BCD11b,,,,,,,,
+C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/an_decoder.sv,1602783139,systemVerilog,,C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/disp.sv,,an_decoder,,,,,,,,
+C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/basys3.sv,1602785612,systemVerilog,,,,basys3,,,,,,,,
+C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/disp.sv,1602777436,systemVerilog,,C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/mux2.sv,,disp,,,,,,,,
+C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/mux2.sv,1602780377,systemVerilog,,C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/mux4.sv,,mux2,,,,,,,,
+C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/mux2_test.sv,1602781119,systemVerilog,,,,mux2_test,,,,,,,,
+C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/mux4.sv,1602782891,systemVerilog,,C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/sseg4.sv,,mux4,,,,,,,,
+C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/mux4_test.sv,1602782682,systemVerilog,,,,mux4_test,,,,,,,,
+C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/sseg4.sv,1602787066,systemVerilog,,C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/sseg4_manual.sv,,sseg4,,,,,,,,
+C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/sseg4_manual.sv,1602786548,systemVerilog,,C:/Users/abby_joseph1/Documents/GitHub/Lab06/sseg_decoder.sv,,sseg4_manual,,,,,,,,
