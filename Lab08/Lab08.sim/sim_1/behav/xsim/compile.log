@@ -1,21 +1,4 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/BCD11b.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module BCD11b
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab07/add3.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module add3
-WARNING: [VRFC 10-3676] redeclaration of ansi port 'num' is not allowed [C:/Users/abby_joseph1/Documents/GitHub/Lab07/add3.sv:28]
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/an_decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/aajos/Documents/GitHub/Lab08/systemverilogcode/an_decoder.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module an_decoder
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/disp.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module disp
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/mux2.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux2
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/mux4.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux4
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/sseg4.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module sseg4
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/sseg4_manual.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module sseg4_manual
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab06/sseg_decoder.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module sseg_decoder
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/basys3.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module basys3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/aajos/Documents/GitHub/Lab08/systemverilogcode/an_decoder_test.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module an_decoder_test

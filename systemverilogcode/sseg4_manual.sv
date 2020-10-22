@@ -22,7 +22,7 @@
 
 module sseg4_manual(
     input [15:0] sw,
-    output [7:0] seg,
+    output [6:0] seg,
     output dp,
     output [3:0] an
     );

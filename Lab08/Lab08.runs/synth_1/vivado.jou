@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1.1 (64-bit)
+# SW Build 2960000 on Wed Aug  5 22:57:20 MDT 2020
+# IP Build 2956692 on Thu Aug  6 01:41:30 MDT 2020
+# Start of session at: Wed Oct 21 14:01:01 2020
+# Process ID: 11136
+# Current directory: C:/Users/aajos/Documents/GitHub/Lab08/Lab08/Lab08.runs/synth_1
+# Command line: vivado.exe -log sseg4_manual.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sseg4_manual.tcl
+# Log file: C:/Users/aajos/Documents/GitHub/Lab08/Lab08/Lab08.runs/synth_1/sseg4_manual.vds
+# Journal file: C:/Users/aajos/Documents/GitHub/Lab08/Lab08/Lab08.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source sseg4_manual.tcl -notrace

@@ -1,25 +1,14 @@
-Vivado Simulator 2020.1
+Vivado Simulator 2020.1.1
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/XilinxVitis/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 005fdccda0a04aab9fcad453350786b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot basys3_behav xil_defaultlib.basys3 xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 005fdccda0a04aab9fcad453350786b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot an_decoder_test_behav xil_defaultlib.an_decoder_test xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'seg' [C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/basys3.sv:31]
-WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 7 for port 'seg' [C:/Users/abby_joseph1/Documents/GitHub/Lab08/systemverilogcode/sseg4_manual.sv:35]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.add3
-Compiling module xil_defaultlib.BCD11b
-Compiling module xil_defaultlib.mux2(BITS=16)
-Compiling module xil_defaultlib.mux4
-Compiling module xil_defaultlib.sseg_decoder
 Compiling module xil_defaultlib.an_decoder
-Compiling module xil_defaultlib.mux2(BITS=7)
-Compiling module xil_defaultlib.sseg4
-Compiling module xil_defaultlib.sseg4_manual
-Compiling module xil_defaultlib.disp
-Compiling module xil_defaultlib.basys3
+Compiling module xil_defaultlib.an_decoder_test
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot basys3_behav
+Built simulation snapshot an_decoder_test_behav
